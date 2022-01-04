@@ -170,10 +170,11 @@ ___
 2. example 2  
 ![](https://www.google.com/photos/about/static/images/google.svg)
 
-## 指定圖片大小
+## 指定圖片大小. 
 Markdown 不支持指定圖片大小，但可以直接插入\<img ... />標籤來指定屬性：
-<img src="https://www.google.com/photos/about/static/images/google.svg" alt="GitHub" title="width='200'" width="200" />
-
+<img src="https://www.google.com/photos/about/static/images/google.svg" alt="GitHub" title="width='100'" width="100" />  
+<img src="https://www.google.com/photos/about/static/images/google.svg" alt="GitHub" title="width='200'" width="200" />  
+<img src="https://www.google.com/photos/about/static/images/google.svg" alt="GitHub" height="50" />
 
 # 註解參照
 這個鏈接用 1 作為網址變量[Google][^1]。然後在文檔的結尾為變量賦值（網址）  

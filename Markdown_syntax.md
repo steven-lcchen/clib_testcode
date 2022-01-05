@@ -2,36 +2,31 @@
 Markdown 段落沒有特殊的格式，直接編寫文字就好。  
 段落的換行是使用兩個以上空格加上Enter。
 
-或在段落後面使用一個空行來表示重新開始一個段落。但這樣會與前段有一空白行的間距("使用兩個以上空格加上Enter"就不會與前段落有間隔)。
-
-- `文字凸顯(文字有灰色背景)`  
-
-- 底線：<u>帶下劃線文本</u> : 通過HTML的\<u> ... \</u>標籤來實現。 
-
-- highlight(高亮)：請在單詞前後使用兩個等號==。例如：
-I need to highlight these ==very important words==.
-
-- Subscript(下標字)：請在字符前後使用一個波浪號tilde symbol (~) 。
-H~2~O，CO~2~
-
-- Superscript(上標字)：請在字符前後使用一個插入號caret symbol (^) 。
-X^2^
+或在段落後面使用一個空行來表示重新開始一個段落。但這樣會與前段有一空白行的間距，但若在行尾使用兩個以上空格加上`Enter`就不會與前段落有間隔。
 
 # 字體
-一般字體  
-*斜體文本*  
-_斜體文本_  
-**粗體文本**  
-__粗體文本__  
-***粗斜體文本***  
-___粗斜體文本___  
-~~刪除線~~  
-__~~粗體刪除線~~__  
-~~__不同組合方式的粗體刪除線__~~  
-__~~不同組合方式的粗體刪除線~~__  
-~~**不同組合方式的粗體刪除線**~~  
-**~~不同組合方式的粗體刪除線~~**  
-~~***不同組合方式的粗斜體刪除線***~~  
+- 一般字體  
+- *斜體文本*  
+- _斜體文本_  
+- **粗體文本**  
+- __粗體文本__  
+- ***粗斜體文本***  
+- ___粗斜體文本___  
+- ~~刪除線~~  
+- __~~粗體刪除線~~__  
+- ~~__不同組合方式的粗體刪除線__~~  
+- __~~不同組合方式的粗體刪除線~~__  
+- ~~**不同組合方式的粗體刪除線**~~  
+- **~~不同組合方式的粗體刪除線~~**  
+- ~~***不同組合方式的粗斜體刪除線***~~  
+- `文字凸顯(文字有灰色背景)`  
+- 底線：<u>帶下劃線文本</u> : 通過HTML的\<u> ... \</u>標籤來實現。 
+- highlight(螢光筆)：請在單詞前後使用兩個等號==。例如：
+  I need to highlight these ==very important words==.
+- Subscript(下標字)：請在字符前後使用一個波浪號tilde symbol (~) 。
+H~2~O，CO~2~，O~3~
+- Superscript(上標字)：請在字符前後使用一個插入號caret symbol (^) 。
+X^2^
 
 # 分隔線
 在一行中用三個以上的星號、減號、底線來建立一個分隔線，行內不能有其他東西。也可以在星號或是減號中間插入空格。下面每種寫法都可以建立分隔線：
@@ -152,37 +147,72 @@ Markdown 製作表格時使用 | 來分隔不同的單元格，使用 - 來分�
 | 10 | 11 | 12| 13 |
 
 # 超連結
-鏈接使用方法如下：
-[鏈接名稱](鏈接地址)：](中間不能有空格
-或者
-<鏈接地址>
-例如：
-[Google首頁](https://www.google.com)
+鏈結使用方法如下：  
+[鏈結名稱](鏈結地址)  
+###：](中間不能有空格  
+例如：  
+[Google首頁](https://www.google.com)  
+或者直接顯示鏈結
+<鏈結地址>  
+例如：  
 <https://www.google.com>
 
 # 插入圖片
-語法
-![這是圖片不見時的文字說明(可以不寫)](圖片位址 "圖片標題|圖片說明")
+語法  
+![這是圖片不見時的文字說明(可以不寫)](圖片位址 "滑鼠hover時顯示的圖片標題")  
+Use [Google](https://www.markdownguide.org "My search engine!").
+You can optionally add a title for a link. This will appear as a tooltip when the user hovers over the link. To add a title, enclose it in parentheses after the URL.
 - - -
 1. example 1  
-![這是圖片不見時的文字說明](./684-600x400.jpg "圖片說明")
+![這是圖片不見時的文字說明](./684-600x400.jpg "雄偉大山")
 ___
 2. example 2  
-![](https://www.google.com/photos/about/static/images/google.svg)
+![](https://www.google.com/photos/about/static/images/google.svg)  
+
 
 ## 指定圖片大小. 
 Markdown 不支持指定圖片大小，但可以直接插入\<img ... />標籤來指定屬性：  
-<img src="https://www.google.com/photos/about/static/images/google.svg" alt="GitHub" title="width='100'" width="100" />  
-<img src="https://www.google.com/photos/about/static/images/google.svg" alt="GitHub" title="width='200'" width="200" />  
-<img src="https://www.google.com/photos/about/static/images/google.svg" alt="GitHub" height="50" />
+<img src="https://www.google.com/photos/about/static/images/google.svg" title="width='100'" width="100" />  
+<img src="https://www.google.com/photos/about/static/images/google.svg" title="width='200'" width="200" />  
+<img src="https://www.google.com/photos/about/static/images/google.svg" title="height='50'" height="50" />  
+<img src="https://www.google.com/photos/about/static/images/google.svg" title="zoom='10%'" style="zoom:10%" />  
+
+# 數學公式及符號
+- 有行內公式與獨立公式兩種：
+  - $ 行內公式 $
+  - $$ 獨立公式 $$  
+ex:  
+  - 行內公式 $F=ma$
+  - 獨立公式 $$F=ma$$
+
+- 上下標
+上標符號，符號 ^， ex: $x^2$，與文字的上標略有不同 x^21^
+下標符號，符號：_，ex: $x_2$，與文字的下標略有不同 x~22~
+若上下標超過一個以上時要用組合符號：{}，ex: $x_{12345}$，$x^{12345}$  
+
+- 括號  
+()、[] 和 | 表示符號本身，用 \{\} 來表示 {} 。當要顯示"大號的"括號或分隔符時，要用 \left 和 \right 命令。
+  - 一些特殊的括號：
+>   | 輸入 | 顯示 | 輸入 | 顯示 |
+>   | ---- | --- | ---- | --- |
+>   | \langle	| ⟨	   | \rangle	| ⟩   |
+>   | \lceil | ⌈	| \rceil	| ⌉ |
+>   | \lfloor	| ⌊	| \rfloor	| ⌋ |
+>   | \lbrace	| {	| \rbrace	| } |
+Ex.
+$$ f(x,y,z) = 3y^2z ( 3+\frac{7x+5}{1+y^2}) $$  
+$$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
+$$ f(x,y,z) = 3y^2z \langle 3+\frac{7x+5}{1+y^2} \rangle $$
+
+更多使用教學請參考 ==[如何在 Markdown 輸入數學公式及符號](https://blog.maxkit.com.tw/2020/02/markdown.html)==
 
 # 註解參照
 這個鏈接用 1 作為網址變量[Google][^1]。然後在文檔的結尾為變量賦值（網址）  
-變量 2 為[Google logo][^2]。
+變量 2 為[Google logo][^2]。  
 
 [^1]: [Google首頁](https://www.google.com)
 [^2]: https://www.google.com/photos/about/static/images/google.svg
 
-# Markdown 官網：
-[a]: Markdown guide: https://www.markdownguide.org
-[b]: Markdown 指南中文版: https://www.markdown.xyz
+# Markdown文件：
+- Markdown guide: https://www.markdownguide.org
+- Markdown 指南中文版: https://www.markdown.xyz
